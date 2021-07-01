@@ -1,6 +1,7 @@
 # Table of contents
 - [Objective](#objective)
 - [Libraries used](#libraries-used)
+- [Exploratory data analysis overview](#exploratory-data-analysis-overview)
 - [Dataset](#dataset)
 
 <div id="objective"></div>
@@ -21,6 +22,20 @@ Please have the following Python libraries installed to run the Jupyter Notebook
 * xgboost
 * sklearn
 * matplotlib
+
+<div id="exploratory-data-analysis-overview"></div>
+
+## Exploratory data analysis overview
+
+Six different insights were obtained from doing the exploratory data analysis. They are:
+* Correlation, if any
+* Rating vs Installs
+* Rating count vs Installs
+* Top ten categories
+* Top ten categories with most installs
+* Distribution of installs
+
+Correlation matrix, boxplot, countplot, barplot, distplot are used to illustrate the findings and insights.
 
 <div id="dataset"></div>
 
