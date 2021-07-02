@@ -6,6 +6,7 @@
 - [Y preprocessing](#y-preprocessing)
 - [X feature engineering](#x-feature-engineering)
 - [Machine learning models overview](#machine-learning-models-overview)
+- [Machine learning models metrics](#machine-learning-models-metrics)
 
 <div id="objective"></div>
 
@@ -98,3 +99,15 @@ Random forest | n_estimators = 100, criterion = 'entropy', random_state = 555, c
 Gradient boosting | n_estimators= 100 , learning_rate= 0.1 ,max_depth= 10, random_state=12
 XGBoost | objective='multi:softmax', random_state =42, max_depth=6, gamma=1.0, learning_rate=0.1
 
+<div id="machine-learning-models-metrics"></div>
+
+## Machine learning models metrics
+
+These are the **three** metrics that are used on the machine learning models to evaluate their performance.  
+The table below shows the metrics as well as the reasons for using them.
+
+Metric | Reason
+-------|-------
+F1 score | seek balance between ` precision ` and ` recall ` due to uneven class distribution
+ROC AUC ovo | represents the ` degree or measure of separability` and tells how much the model is capable of distinguishing between multi classes
+Logloss | to compare between different models especially when the other scores are very similar
