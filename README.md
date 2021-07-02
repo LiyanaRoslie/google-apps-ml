@@ -1,17 +1,25 @@
 # Table of contents
 - [Objective](#objective)
+- [Dataset](#dataset)
 - [Libraries used](#libraries-used)
 - [Exploratory data analysis overview](#exploratory-data-analysis-overview)
 - [Y preprocessing](#y-preprocessing)
 - [X feature engineering](#x-feature-engineering)
 - [Machine learning models overview](#machine-learning-models-overview)
-- [Dataset](#dataset)
 
 <div id="objective"></div>
 
 ## Objective
 
 To predict the range of the app installs in Google PlayStore
+
+<div id="dataset"></div>
+
+## Dataset
+
+Google Play app dataset can be retrieved using one of the links below:
+* https://drive.google.com/file/d/1m7KKo_izuhFFTJnmgvOnxmNCnbjn302n/view?usp=sharing
+* https://www.kaggle.com/gauthamp10/google-playstore-apps
 
 <div id="libraries-used"></div>
 
@@ -89,12 +97,4 @@ Decision tree | criterion = 'entropy', max_depth = 5, class_weight=y_installs_we
 Random forest | n_estimators = 100, criterion = 'entropy', random_state = 555, class_weight = y_installs_weights['weights']
 Gradient boosting | n_estimators= 100 , learning_rate= 0.1 ,max_depth= 10, random_state=12
 XGBoost | objective='multi:softmax', random_state =42, max_depth=6, gamma=1.0, learning_rate=0.1
-
-<div id="dataset"></div>
-
-## Dataset
-
-Google Play app dataset can be retrieved using one of the links below:
-* https://drive.google.com/file/d/1m7KKo_izuhFFTJnmgvOnxmNCnbjn302n/view?usp=sharing
-* https://www.kaggle.com/gauthamp10/google-playstore-apps
 
