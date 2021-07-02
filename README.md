@@ -2,6 +2,7 @@
 - [Objective](#objective)
 - [Libraries used](#libraries-used)
 - [Exploratory data analysis overview](#exploratory-data-analysis-overview)
+- [Y preprocessing](#y-preprocessing)
 - [Dataset](#dataset)
 
 <div id="objective"></div>
@@ -36,6 +37,19 @@ Six different insights were obtained from doing the exploratory data analysis. T
 * Distribution of installs
 
 Correlation matrix, boxplot, countplot, barplot, distplot are used to illustrate the findings and insights.
+
+<div id="y-preprocessing"></div>
+
+## Y Preprocessing
+
+Quantile binning is used on Y to separate installs into four different classes of installs.  
+Each class can represent four stages or phases of app development.
+
+The **four different classes** are:
+* 0 -> 0 to 100 installs
+* 1 -> 101 to 1000 installs
+* 2 -> 1001 to 10,000 installs
+* 3 -> 10,001 to 10,000,000,000 
 
 <div id="dataset"></div>
 
