@@ -3,6 +3,7 @@
 - [Libraries used](#libraries-used)
 - [Exploratory data analysis overview](#exploratory-data-analysis-overview)
 - [Y preprocessing](#y-preprocessing)
+- [X feature engineering](#x-feature-engineering)
 - [Dataset](#dataset)
 
 <div id="objective"></div>
@@ -49,7 +50,28 @@ The **four different classes** are:
 * 0 -> 0 to 100 installs
 * 1 -> 101 to 1000 installs
 * 2 -> 1001 to 10,000 installs
-* 3 -> 10,001 to 10,000,000,000 
+* 3 -> 10,001 to 10,000,000,000
+
+<div id="x-feature-engineering"></div>
+
+## X feature engineering
+
+Below shows the raw features that are selected from the dataset, which then undergo a process or processes to get encoded before they can be be fitted into the machine learning algorithm:
+
+Raw features | Method | Derived features | Columns used
+-------------|--------|------------------|-------------
+Category | Binary encoding | Encoded category | 6
+Free | Dummy encoding | Encoded free | 1
+Ad supported | Dummy encoding | Encoded free | 1
+In app purchases | Dummy encoding | Encoded free | 1
+Editor's choice | Dummy encoding | Encoded free | 1
+Rating | Custom quantile encoding & Robust scaler | Encoded rating | 1
+Rating count | Custom quantile encoding & Robust scaler | Encoded rating count | 1
+Content rating | Custom ordinal encoding | Encoded content rating | 1
+Minimum android | Custom extraction | Encoded minimum android | 1
+Release date | Custom extraction & Robust Scaler| Encoded released year, released month, released date, released weekend | 4
+Updated date | Custom extraction & Robust Scaler | Encoded released last update difference | 1
+Developer ID | Derive frequency & Quantile Binning | Encoded developer id count | 1
 
 <div id="dataset"></div>
 
