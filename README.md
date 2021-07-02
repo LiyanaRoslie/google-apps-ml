@@ -4,6 +4,7 @@
 - [Exploratory data analysis overview](#exploratory-data-analysis-overview)
 - [Y preprocessing](#y-preprocessing)
 - [X feature engineering](#x-feature-engineering)
+- [Machine learning models overview](#machine-learning-models-overview)
 - [Dataset](#dataset)
 
 <div id="objective"></div>
@@ -72,6 +73,22 @@ Minimum android | Custom extraction | Encoded minimum android | 1
 Release date | Custom extraction & Robust Scaler| Encoded released year, released month, released date, released weekend | 4
 Updated date | Custom extraction & Robust Scaler | Encoded released last update difference | 1
 Developer ID | Derive frequency & Quantile Binning | Encoded developer id count | 1
+
+<div id="machine-learning-models-overview"></div>
+
+## Machine learning models overview
+
+These are the list of models and the parameters that were applied to predict the app range installs.
+The parameters were being tested in a few rounds and the final chosen parameter might differ from this list
+
+Model name | Parameters applied
+-----------|-------------------
+Logistic regression | multi_class='multinomial', solver='newton-cg', C = 166.81005372000593, random_state=13, class_weight= y_installs_weights['weights']
+KNN | n_neighbors = 5, p = 2, weights = 'distance'
+Decision tree | criterion = 'entropy', max_depth = 5, class_weight=y_installs_weights['weights']
+Random forest | n_estimators = 100, criterion = 'entropy', random_state = 555, class_weight = y_installs_weights['weights']
+Gradient boosting | n_estimators= 100 , learning_rate= 0.1 ,max_depth= 10, random_state=12
+XGBoost | objective='multi:softmax', random_state =42, max_depth=6, gamma=1.0, learning_rate=0.1
 
 <div id="dataset"></div>
 
