@@ -39,7 +39,8 @@ Please have the following Python libraries installed to run the Jupyter Notebook
 
 ## Exploratory data analysis overview
 
-Six different insights were obtained from doing the exploratory data analysis. They are:
+Perform exploratory data analysis (EDA) on Google Playstore apps to find out what kind of apps can fetch more user installs.  
+Six different insights were obtained from doing the EDA. They are:
 * Correlation, if any
 * Rating vs Installs
 * Rating count vs Installs
