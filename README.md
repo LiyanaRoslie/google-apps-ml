@@ -1,5 +1,6 @@
 # Table of contents
 - [Objective](#objective)
+- [Project overview](#project-overview)
 - [Dataset](#dataset)
 - [Libraries used](#libraries-used)
 - [Exploratory data analysis overview](#exploratory-data-analysis-overview)
@@ -13,6 +14,12 @@
 ## Objective
 
 To predict the range of the app installs in Google PlayStore
+
+<div id="project-overview"></div>
+
+## Project overview
+
+` apps-EDA-ML-journey.pptx ` contains the summarized version of the exploratory data analysis (EDA) and machine learning (ML) evaluation while the full version and source code is located in ` apps-EDA-ML.ipynb`
 
 <div id="dataset"></div>
 
